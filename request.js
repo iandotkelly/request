@@ -1662,7 +1662,7 @@ Request.prototype.oauth = function (_oauth) {
     oa.oauth_nonce = uuid().replace(/-/g, '')
   }
 
-  oa.oauth_signature_method = 'HMAC-SHA1'
+  oa.oauth_signature_method = 'RSA-SHA1'
 
   var consumer_secret = oa.oauth_consumer_secret
   delete oa.oauth_consumer_secret
